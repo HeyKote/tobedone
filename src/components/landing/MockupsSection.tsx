@@ -44,7 +44,7 @@ const MockupsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="product" className="py-20 md:py-32 relative overflow-hidden">
+    <section id="product" className="py-16 md:py-28 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 gradient-hero opacity-50" />
       

@@ -56,7 +56,7 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="py-20 md:py-32 relative overflow-hidden">
+    <section id="pricing" className="py-16 md:py-28 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl" />
       

@@ -62,9 +62,11 @@ const HeroSection = () => {
                 <Zap className="w-5 h-5" />
                 Начать бесплатно
               </Button>
-              <Button variant="outline" size="xl">
-                <Gamepad2 className="w-5 h-5" />
-                Как это работает
+              <Button variant="outline" size="xl" asChild>
+                <a href="#how-it-works" className="inline-flex items-center gap-2">
+                  <Gamepad2 className="w-5 h-5" />
+                  Как это работает
+                </a>
               </Button>
             </motion.div>
 

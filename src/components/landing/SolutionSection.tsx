@@ -30,7 +30,7 @@ const solutions = [
 
 const SolutionSection = () => {
   return (
-    <section id="solution" className="py-20 md:py-32 relative overflow-hidden">
+    <section id="solution" className="py-16 md:py-28 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-accent/5 blur-3xl" />

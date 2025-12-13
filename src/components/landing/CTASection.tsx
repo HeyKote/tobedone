@@ -4,7 +4,7 @@ import { Zap, Gamepad2 } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden">
+    <section className="py-16 md:py-28 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 gradient-primary opacity-95" />
       
