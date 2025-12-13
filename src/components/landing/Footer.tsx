@@ -2,8 +2,7 @@ import { Gamepad2, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const footerLinks = [
-  { href: "#product", label: "Продукт" },
-  { href: "#solution", label: "Решение" },
+  { href: "#product", label: "О продукте" },
   { href: "#how-it-works", label: "Как это работает" },
   { href: "#features", label: "Возможности" },
   { href: "#pricing", label: "Тарифы" }
