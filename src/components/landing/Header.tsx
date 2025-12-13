@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Gamepad2, Menu, X } from "lucide-react";
 import { useState } from "react";
 
+const navLinks = [
+  { href: "#product", label: "О продукте" },
+  { href: "#how-it-works", label: "Как это работает" },
+  { href: "#features", label: "Возможности" },
+  { href: "#pricing", label: "Тарифы" }
+];
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,22 +32,19 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              Возможности
-            </a>
-            <a href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              Тарифы
-            </a>
-            <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              О продукте
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
-              Войти
-            </Button>
             <Button variant="hero" size="sm">
               Начать бесплатно
             </Button>
@@ -64,31 +68,17 @@ const Header = () => {
             className="md:hidden py-4 border-t border-border/50"
           >
             <nav className="flex flex-col gap-4">
-              <a 
-                href="#features" 
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Возможности
-              </a>
-              <a 
-                href="#pricing" 
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Тарифы
-              </a>
-              <a 
-                href="#about" 
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                О продукте
-              </a>
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border/50">
-                <Button variant="ghost" size="sm" className="justify-start">
-                  Войти
-                </Button>
                 <Button variant="hero" size="sm">
                   Начать бесплатно
                 </Button>

@@ -1,9 +1,8 @@
 import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
-import ProblemSection from "@/components/landing/ProblemSection";
+import MockupsSection from "@/components/landing/MockupsSection";
 import SolutionSection from "@/components/landing/SolutionSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
-import MockupsSection from "@/components/landing/MockupsSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import PricingSection from "@/components/landing/PricingSection";
 import CTASection from "@/components/landing/CTASection";
@@ -14,10 +13,9 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Header />
       <HeroSection />
-      <ProblemSection />
+      <MockupsSection />
       <SolutionSection />
       <HowItWorksSection />
-      <MockupsSection />
       <FeaturesSection />
       <PricingSection />
       <CTASection />

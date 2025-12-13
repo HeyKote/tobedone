@@ -44,7 +44,7 @@ const CTASection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex justify-center"
           >
             <Button 
               size="xl" 
@@ -52,13 +52,6 @@ const CTASection = () => {
             >
               <Zap className="w-5 h-5" />
               Начать бесплатно
-            </Button>
-            <Button 
-              variant="ghost" 
-              size="xl"
-              className="text-primary-foreground border-2 border-white/30 hover:bg-white/10 hover:text-primary-foreground"
-            >
-              Связаться с нами
             </Button>
           </motion.div>
 
@@ -69,7 +62,7 @@ const CTASection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-8 text-primary-foreground/60 text-sm"
           >
-            Без кредитной карты · Бесплатная версия навсегда
+            Бесплатная версия навсегда
           </motion.p>
         </motion.div>
       </div>

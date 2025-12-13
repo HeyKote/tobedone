@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import mockupOnboarding from "@/assets/mockup-onboarding.png";
 import mockupDashboard from "@/assets/mockup-dashboard.png";
 import mockupCalories from "@/assets/mockup-calories.png";
 import mockupWorkout from "@/assets/mockup-workout.png";
@@ -9,12 +8,6 @@ import mockupRewards from "@/assets/mockup-rewards.png";
 import mockupAnalytics from "@/assets/mockup-analytics.png";
 
 const mockups = [
-  {
-    id: "onboarding",
-    title: "Онбординг",
-    description: "Дружелюбное знакомство с приложением и обещание ценности",
-    image: mockupOnboarding
-  },
   {
     id: "dashboard",
     title: "Главный экран",
@@ -24,7 +17,7 @@ const mockups = [
   {
     id: "calories",
     title: "Трекинг питания",
-    description: "Быстрый ввод еды с умным поиском и подсчётом макросов",
+    description: "Быстрый ввод еды с умным поиском и подсчётом КБЖУ",
     image: mockupCalories
   },
   {
@@ -51,7 +44,7 @@ const MockupsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden">
+    <section id="product" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 gradient-hero opacity-50" />
       
@@ -67,7 +60,7 @@ const MockupsSection = () => {
             Продукт
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-hero mb-6">
-            Посмотрите ToBeDone <span className="text-gradient">в действии</span>
+            Посмотрите ToBeDone <span className="text-gradient">в&nbsp;действии</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Интуитивный интерфейс, который делает трекинг приятным

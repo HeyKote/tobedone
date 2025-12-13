@@ -5,7 +5,7 @@ import mockupDashboard from "@/assets/mockup-dashboard.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden gradient-hero">
+    <section className="relative overflow-hidden gradient-hero py-20 md:py-24 lg:py-28">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-primary/10 blur-3xl animate-pulse-soft" />
@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="absolute bottom-20 right-1/4 w-64 h-64 rounded-full bg-primary/5 blur-3xl animate-pulse-soft" style={{ animationDelay: '2s' }} />
       </div>
 
-      <div className="container relative z-10 px-4 py-20 md:py-32">
+      <div className="container relative z-10 px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -25,7 +25,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-8"
             >
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-medium">Фитнес как игра</span>
+              <span className="text-sm font-medium">ЗОЖ как игра</span>
             </motion.div>
 
             {/* Main heading */}
@@ -84,8 +84,8 @@ const HeroSection = () => {
                 <p className="text-sm text-muted-foreground mt-1">Рейтинг</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="text-3xl md:text-4xl font-bold text-gradient">85%</p>
-                <p className="text-sm text-muted-foreground mt-1">Удержание</p>
+                <p className="text-3xl md:text-4xl font-bold text-gradient">8 из 10</p>
+                <p className="text-sm text-muted-foreground mt-1">Достигают результат</p>
               </div>
             </motion.div>
           </div>
