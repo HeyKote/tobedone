@@ -31,7 +31,7 @@ const Footer = () => {
           </nav>
 
           <p className="text-sm text-muted-foreground">
-            © 2024 ToBeDone. Все права защищены.
+            © 2025 ToBeDone. Все права защищены.
           </p>
         </div>
       </div>
