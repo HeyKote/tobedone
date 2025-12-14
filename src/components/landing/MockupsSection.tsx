@@ -9,12 +9,6 @@ import mockupAnalytics from "@/assets/mockup-analytics.png";
 
 const mockups = [
   {
-    id: "dashboard",
-    title: "Главный экран",
-    description: "Дневные задания, стрики и прогресс — всё на одном экране",
-    image: mockupDashboard
-  },
-  {
     id: "calories",
     title: "Трекинг питания",
     description: "Быстрый ввод еды с умным поиском и подсчётом КБЖУ",
@@ -95,7 +89,7 @@ const MockupsSection = () => {
 
           {/* Screen selector */}
           <div className="flex-1 w-full">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {mockups.map((mockup, index) => (
                 <motion.button
                   key={mockup.id}
