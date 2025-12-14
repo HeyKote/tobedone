@@ -76,7 +76,7 @@ const MockupsSection = () => {
             transition={{ duration: 0.6 }}
             className="relative flex-shrink-0"
           >
-            <div className="relative w-72 md:w-80">
+            <div className="relative w-72 md:w-80 aspect-[9/19]">
               {/* Phone frame glow */}
               <div className="absolute -inset-4 rounded-[3rem] bg-primary/20 blur-2xl" />
               
@@ -88,7 +88,7 @@ const MockupsSection = () => {
                 transition={{ duration: 0.3 }}
                 src={mockups[activeIndex].image}
                 alt={mockups[activeIndex].title}
-                className="relative w-full rounded-[2rem] shadow-elevated"
+                className="absolute inset-0 w-full h-full rounded-[2rem] shadow-elevated object-cover"
               />
             </div>
           </motion.div>
